@@ -94,6 +94,9 @@ export default function City() {
           </div>
         </div>
       </div>
+      <a href="https://github.com/kjsau/weatherreactapp"> Open source code</a>
+      <span class="author"> by Katherine Scott</span>
+      <script src="source/app.js"></script>
     </div>
   );
 }
