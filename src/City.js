@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,7 @@ export default function City(props) {
 
   function handleResponse(response) {
     setWeatherData({
+      date: new Date(response.data.dt * 1000),
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -49,7 +51,9 @@ export default function City(props) {
               <div className="cardMain">
                 <div className="card-header">
                   <h1>{weatherData.city}</h1>
-                  <h2> </h2>
+                  <h2>
+                    <FormattedDate date={weatherData.date} />
+                  </h2>
                   <div className="card-main">
                     <i className="material-icons"></i>
                     <div className="row">
