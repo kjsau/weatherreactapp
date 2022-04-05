@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import WeatherIcon from "./WeatherIcon";
 
 import FormattedDate from "./FormattedDate";
 
@@ -38,10 +39,9 @@ export default function WeatherInfo(props) {
               <div className="col-5">
                 <ul>
                   <li>
-                    <img
-                      src={require(`./Images/weather-news.png`)}
-                      alt="describe"
-                      width="50px"
+                    <WeatherIcon
+                      code={props.data.icon}
+                      alt={props.data.description}
                     />
                     <h3> {props.data.description} </h3>
                   </li>

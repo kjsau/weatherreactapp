@@ -18,6 +18,7 @@ export default function City(props) {
       city: response.data.name,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
     });
