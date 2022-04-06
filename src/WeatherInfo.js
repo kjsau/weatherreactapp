@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 import FormattedDate from "./FormattedDate";
 
@@ -19,12 +20,9 @@ export default function WeatherInfo(props) {
               <div className="col-5">
                 <ul>
                   <li>
-                    <img
-                      src={require(`./Images/temperature.png`)}
-                      alt="temp"
-                      width="50px"
-                    />
-                    <h3> {Math.round(props.data.temperature)}</h3>
+                    <h3>
+                      <WeatherTemperature celsius={props.data.temperature} />
+                    </h3>
                   </li>
                   <li>
                     <img

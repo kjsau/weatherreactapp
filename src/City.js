@@ -58,12 +58,6 @@ export default function City(props) {
                     onChange={handleCityChange}
                   />
                 </form>
-                <div class="switch-button">
-                  <input class="switch-button-checkbox" type="checkbox"></input>
-                  <label class="switch-button-label" for="">
-                    <span class="switch-button-label-span">c</span>
-                  </label>
-                </div>
               </div>
             </div>
             <br />

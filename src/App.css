@@ -3,6 +3,7 @@ h2,
 h3,
 .date,
 .author,
+.temperature,
 li {
   color: #016ea5;
   text-align: center;
@@ -109,10 +110,6 @@ li {
   font-size: 25px;
 }
 
-.temperature {
-  color: white;
-  font-size: 20px;
-}
 .todayWeather {
   background-color: transparent;
   padding: 30px;

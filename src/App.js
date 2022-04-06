@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <City defaultCity="London" />
+      <City defaultCity="Perth" />
     </div>
   );
 }
