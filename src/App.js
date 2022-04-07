@@ -1,11 +1,11 @@
 import React from "react";
-import City from "./City";
+import Weather from "./Weather";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <City defaultCity="Perth" />
+      <Weather defaultCity="Perth" />
       <footer>
         <a
           href="https://github.com/kjsau/weatherreactapp"
